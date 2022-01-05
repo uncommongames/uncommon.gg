@@ -19,7 +19,7 @@
   <style>
     body,
     html {
-      background: #111111;
+      background: #111;
       color: white;
       user-select: none;
       font-family: 'Bebas Neue', serif;
@@ -30,10 +30,6 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-
-      text-transform: uppercase;
-      color: #FFFFFF;
-      font-weight: bold;
     }
 
     .footer {
@@ -55,11 +51,19 @@
       .title {
         font-size: 8em;
       }
+
+      .logo {
+        max-width: 25em;
+      }
     }
 
     @media only screen and (max-width: 600px) {
       .title {
         font-size: 4em;
+      }
+
+      .logo {
+        max-width: 15em;
       }
     }
   </style>
@@ -67,7 +71,7 @@
 
 <body>
   <div class="container">
-    <span class="title">Uncommon</span>
+    <img class="logo" src="logo.png" alt="Uncommon"></img>
   </div>
 </body>
 
