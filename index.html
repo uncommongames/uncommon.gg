@@ -65,15 +65,30 @@
       text-align: center;
     }
 
-    .footer a {
+    .link {
       color: #c5c5c5;
       font-size: 1.25em;
       margin: 0.5em;
       text-decoration: underline;
     }
 
-    .footer a:hover {
+    .link:hover {
       color: #5FB045;
+    }
+
+    .socials {
+      margin-top: 0.5em;
+    }
+
+    .social {
+      margin: 0.25em;
+      filter: invert(77%) sepia(24%) saturate(4%) hue-rotate(349deg) brightness(102%) contrast(82%);
+      width: 1.25em;
+      height: 1.25em;
+    }
+
+    .social:hover {
+      filter: invert(57%) sepia(12%) saturate(1853%) hue-rotate(60deg) brightness(101%) contrast(102%);
     }
 
     a {
@@ -104,8 +119,15 @@
       <a href="http://uncommon.gg/jobs">Join our Team</a>
     </div>
     <div class="footer">
-      <a href="mailto:hello@uncommon.gg">Contact</a>
-      <a href="https://uncommon.gg/jobs">Jobs</a>
+      <div class="links">
+        <a class="link" href="mailto:hello@uncommon.gg" target="_blank">Contact</a>
+        <a class="link" href="https://uncommon.gg/jobs">Jobs</a>
+      </div>
+      <div class="socials">
+        <a href="https://www.instagram.com/playuncommon/" target="_blank"><img class="social" src="social_ig.svg" alt="Instagram" /></a>
+        <a href="https://twitter.com/playuncommon" target="_blank"><img class="social" src="social_twitter.svg" alt="Twitter" /></a>
+        <a href="https://www.twitch.tv/PlayUncommon/" target="_blank"><img class="social" src="social_twitch.svg" alt="Twitch" /></a>
+      </div>
     </div>
   </body>
 
