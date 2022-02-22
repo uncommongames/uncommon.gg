@@ -1,37 +1,60 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title>Uncommon</title>
-  <link href="https://fonts.googleapis.com/css?family=Bebas+Neue" rel="stylesheet">
+  <head>
+    <title>Uncommon</title>
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue" rel="stylesheet">
 
-  <meta property="og:title" content="Uncommon" />
-  <meta property="og:image" content="https://uncommon.gg/og_logo.png" />
-  <meta property="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@Play_Uncommon" />
-  <meta property="twitter:image" content="https://uncommon.gg/og_logo.png" />
-  <meta name="theme-color" content='#111111' />
-  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <meta property="og:title" content="Uncommon" />
+    <meta property="og:image" content="https://uncommon.gg/og_logo.png" />
+    <meta property="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@Play_Uncommon" />
+    <meta property="twitter:image" content="https://uncommon.gg/og_logo.png" />
+    <meta name="theme-color" content='#111111' />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  <link rel="manifest" href="/site.webmanifest" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
-  <style>
+    <style>
     body,
     html {
-      background: #111;
-      color: white;
-      user-select: none;
+      background-image: url('concept.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: auto 100%;
       font-family: 'Bebas Neue', serif;
     }
 
+    .header {
+      text-align: center;
+    }
+
+    .logo {
+      filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 1));
+      max-width: 38em;
+      margin-top: 12em;
+    }
+
     .container {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      text-align: center;
+      margin-top: 10em;
+    }
+
+    .container a {
+      background-color: #69d945;
+      padding: 0.5em 1em;
+      border: none;
+      border-radius: 0.25em;
+      color: white;
+      font-size: 2em;
+    }
+
+    .container a:hover {
+      background-color: #5FB045;
     }
 
     .footer {
@@ -42,6 +65,17 @@
       text-align: center;
     }
 
+    .footer a {
+      color: #c5c5c5;
+      font-size: 1.25em;
+      margin: 0.5em;
+      text-decoration: underline;
+    }
+
+    .footer a:hover {
+      color: #5FB045;
+    }
+
     a {
       text-decoration: inherit;
       color: inherit;
@@ -49,32 +83,30 @@
       font-size: 1.1em;
     }
 
-    @media only screen and (min-width: 600px) {
-      .title {
-        font-size: 8em;
-      }
-
-      .logo {
-        max-width: 25em;
-      }
-    }
-
     @media only screen and (max-width: 600px) {
-      .title {
-        font-size: 4em;
+      .logo {
+        max-width: 20em;
+        margin-top: 5em;
       }
 
-      .logo {
-        max-width: 15em;
+      .container a {
+        font-size: 1.75em;
       }
     }
-  </style>
-</head>
+    </style>
+  </head>
 
-<body>
-  <div class="container">
-    <img class="logo" src="logo.png" alt="Uncommon"></img>
-  </div>
-</body>
+  <body>
+    <div class="header">
+      <img class="logo" src="logo.png" alt="Uncommon"></img>
+    </div>
+    <div class="container">
+      <a href="http://uncommon.gg/jobs">Join our Team</a>
+    </div>
+    <div class="footer">
+      <a href="mailto:hello@uncommon.gg">Contact</a>
+      <a href="https://uncommon.gg/jobs">Jobs</a>
+    </div>
+  </body>
 
 </html>
