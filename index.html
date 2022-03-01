@@ -3,6 +3,9 @@
 
   <head>
     <title>Uncommon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue" rel="stylesheet">
 
     <meta property="og:title" content="Uncommon" />
@@ -19,14 +22,13 @@
     <link rel="manifest" href="/site.webmanifest" />
 
     <style>
-    body,
-    html {
-      background-image: url('concept.png');
+    body, html {
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)), url('concept.png');
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: center;
       background-size: auto 100%;
-      font-family: 'Bebas Neue', serif;
+      font-family: 'Open Sans', sans-serif;
     }
 
     .header {
@@ -40,21 +42,34 @@
     }
 
     .container {
-      text-align: center;
-      margin-top: 10em;
+      margin: 5em 2.5em 0 2.5em;
     }
 
-    .container a {
+    .cta {
+      text-align: center;
+      margin-top: 3.5em;
+    }
+
+    .cta a {
       background-color: #69d945;
       padding: 0.5em 1em;
       border: none;
       border-radius: 0.25em;
       color: white;
+      font-family: 'Bebas Neue', sans-serif;
       font-size: 2em;
     }
 
-    .container a:hover {
+    .cta a:hover {
       background-color: #5FB045;
+    }
+
+    .pitch {
+      color: white;
+      font-size: 1.25em;
+      max-width: 80rem;
+      margin: 0 auto !important; 
+      float: none !important; 	
     }
 
     .footer {
@@ -65,8 +80,15 @@
       text-align: center;
     }
 
+    .footer-mobile {
+      margin-top: 3em;
+      text-align: center;
+      visibility: hidden;
+    }
+
     .link {
-      color: #c5c5c5;
+      color: white;
+      font-family: 'Bebas Neue', sans-serif;
       font-size: 1.25em;
       margin: 0.5em;
       text-decoration: underline;
@@ -82,7 +104,7 @@
 
     .social {
       margin: 0.25em;
-      filter: invert(77%) sepia(24%) saturate(4%) hue-rotate(349deg) brightness(102%) contrast(82%);
+      filter: invert(100%) sepia(46%) saturate(2%) hue-rotate(221deg) brightness(115%) contrast(101%);
       width: 1.25em;
       height: 1.25em;
     }
@@ -101,11 +123,27 @@
     @media only screen and (max-width: 600px) {
       .logo {
         max-width: 16em;
-        margin-top: 5em;
+        margin-top: 2.5em;
+      }
+
+      .container {
+        margin: 2.5em 0.75em 0 0.75em;
       }
 
       .container a {
         font-size: 1.5em;
+      }
+
+      .pitch {
+        font-size: 1em;
+      }
+
+      .footer {
+        visibility: hidden;
+      }
+
+      .footer-mobile {
+        visibility: visible;
       }
     }
     </style>
@@ -116,12 +154,29 @@
       <img class="logo" src="logo.png" alt="Uncommon"></img>
     </div>
     <div class="container">
-      <a href="mailto:hello@uncommon.gg" target="_blank">Join our Team</a>
+      <p class="pitch">
+      Uncommon Games is a venture backed game studio founded by industry veterans focused on building community-focused multiplayer games. We are lifelong gamers with extensive game development experience. Our games have been played by millions of players around the world across many platforms.<br /><br />
+      To build games focused on community, we aim to cultivate an inspiring and supportive work environment. In addition to competitive compensation and top tier benefits, we are committed to providing professional autonomy, deep creative input, meaningful work, and a healthy work-life balance for our team. 
+      </p>
+      <div class="cta">
+        <a href="https://www.linkedin.com/jobs/uncommon-jobs-worldwide?f_C=77764370&trk=top-card_top-card-primary-button-top-card-primary-cta&position=1&pageNum=0" target="_blank">Join our Team</a>
+      </div>
     </div>
     <div class="footer">
       <div class="links">
         <a class="link" href="mailto:hello@uncommon.gg" target="_blank">Contact</a>
-        <a class="link" href="mailto:hello@uncommon.gg" target="_blank">Jobs</a>
+        <a class="link" href="https://www.linkedin.com/jobs/uncommon-jobs-worldwide?f_C=77764370&trk=top-card_top-card-primary-button-top-card-primary-cta&position=1&pageNum=0" target="_blank">Jobs</a>
+      </div>
+      <div class="socials">
+        <a href="https://www.instagram.com/playuncommon/" target="_blank"><img class="social" src="social_ig.svg" alt="Instagram" /></a>
+        <a href="https://twitter.com/playuncommon" target="_blank"><img class="social" src="social_twitter.svg" alt="Twitter" /></a>
+        <a href="https://www.twitch.tv/PlayUncommon/" target="_blank"><img class="social" src="social_twitch.svg" alt="Twitch" /></a>
+      </div>
+    </div>
+    <div class="footer-mobile">
+      <div class="links">
+        <a class="link" href="mailto:hello@uncommon.gg" target="_blank">Contact</a>
+        <a class="link" href="https://www.linkedin.com/jobs/uncommon-jobs-worldwide?f_C=77764370&trk=top-card_top-card-primary-button-top-card-primary-cta&position=1&pageNum=0" target="_blank">Jobs</a>
       </div>
       <div class="socials">
         <a href="https://www.instagram.com/playuncommon/" target="_blank"><img class="social" src="social_ig.svg" alt="Instagram" /></a>
